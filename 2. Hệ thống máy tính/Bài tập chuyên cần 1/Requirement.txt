@@ -1,0 +1,39 @@
+Bài 1. Viết chương trình cho phép chuyển đổi giữa các hệ cơ số sau:
+
+1. Từ hệ 10 sang hệ 2
+
+2. Từ hệ 10 sang hệ 16
+
+3. Từ hê 2 sang hệ 10
+
+4. Từ hệ 16 sang hệ 10
+
+5. Từ hệ 2 sang hệ 16
+
+Ứng với mỗi hệ nhập vào giá trị cần chuyển đổi hệ thống xử lý và xuất kết quả chuyển đổi tương ứng.
+
+Lưu ý: chỉ xử lý số nguyên dương.
+
+Bài 2. Hãy nhập vào 2 số nhị phân 8 bit (số nguyên có dấu dạng bù 2) hãy thực hiện các phép tính theo menu sau:
+
+1. Tính tổng hai dãy bit
+
+2. Tính Hiệu hai dãy bit
+
+3. Tính tích hai dãy bit
+
+4. TÍnh thương 2 dãy bit
+
+BÁO CÁO: ĐÂY LÀ PHẦN BẮT BUỘC SV KHÔNG THỰC HIỆN SẼ KHÔNG ĐƯỢC CHẤM ĐIỂM
+
+Làm trên MSWORD gồm các nội dung sau:
+
+Phần 1: Đánh Giá
+
+- Bảng tự đánh giá các yêu cầu đã hoàn thành
+
+- Đánh giá tổng thể mức độ hoàn thành của bài nộp
+
+Phần 2: Kết quả bài làm
+
+- Chụp hình lại màn hình kết quả tương ứng với từng yêu cầu.

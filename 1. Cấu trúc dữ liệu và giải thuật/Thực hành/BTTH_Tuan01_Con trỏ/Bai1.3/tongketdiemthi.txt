@@ -1,0 +1,17 @@
+SBD,Ho va ten,KHTN,KHXH,Tong
+BD1200001,Pham hoai nam,0,19,30
+BD1200002,Nguyen Cong phuong,18.75,0,37.2
+BD1200003,nguyen van a,0,22.25,37.8
+BD1200004,Le van duc,18,0,38.05
+BD1200005,Le hoai nhon,16.75,0,40.25
+BD1200006,Le Anh duc,0,11.75,24
+BD1200007,Nguyen hoai minh,17.5,0,35.75
+BD1200008,Le cong Vinh,19.25,0,37.25
+BD1200009,phan Anh duc,16,18,49.7
+BD1200010,Pham thi Thuy Linh,10.25,17.5,43.75
+BD1200011,le anh Hai,14.5,0,34.35
+BD1200012,Tran thi thuy Tien,13.75,20.75,50.65
+BD1200013,le Bao minh,0,2.75,10.55
+BD1200014,Nguyen Thi phuong hang,8.75,17,37.15
+BD1200015,pham thi nhung,0,14.25,27.95
+BD1200016,Nguyen thi da thao,18.5,0,36.25

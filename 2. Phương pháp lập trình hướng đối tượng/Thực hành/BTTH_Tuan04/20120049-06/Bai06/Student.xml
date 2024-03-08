@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ArrStd>
+	<Student id="0">
+		<StdID>20120003</StdID>
+		<LastName>Nguyen Thi</LastName>
+		<FirstName>Lien</FirstName>
+		<Address>Lien</Address>
+		<Birth_Day>31</Birth_Day>
+		<Birth_Month>7</Birth_Month>
+		<Birth_Year>2002</Birth_Year>
+		<Mark>8.68</Mark>
+	</Student>
+	<Student id="1">
+		<StdID>20120002</StdID>
+		<LastName>Nguyen Van</LastName>
+		<FirstName>Binh</FirstName>
+		<Address>Binh</Address>
+		<Birth_Day>14</Birth_Day>
+		<Birth_Month>8</Birth_Month>
+		<Birth_Year>2002</Birth_Year>
+		<Mark>7.17</Mark>
+	</Student>
+	<Student id="2">
+		<StdID>20120001</StdID>
+		<LastName>Nguyen Van</LastName>
+		<FirstName>Anh</FirstName>
+		<Address>Anh</Address>
+		<Birth_Day>2</Birth_Day>
+		<Birth_Month>2</Birth_Month>
+		<Birth_Year>2002</Birth_Year>
+		<Mark>9.24</Mark>
+	</Student>
+	<Student id="3">
+		<StdID>20120004</StdID>
+		<LastName>Tran Thao</LastName>
+		<FirstName>Nguyen</FirstName>
+		<Address>Nguyen</Address>
+		<Birth_Day>21</Birth_Day>
+		<Birth_Month>6</Birth_Month>
+		<Birth_Year>2002</Birth_Year>
+		<Mark>5.75</Mark>
+	</Student>
+</ArrStd>

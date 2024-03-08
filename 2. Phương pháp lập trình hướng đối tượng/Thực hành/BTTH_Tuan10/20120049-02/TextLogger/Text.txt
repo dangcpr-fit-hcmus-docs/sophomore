@@ -1,0 +1,8 @@
+2022 5 9 16 22 19 Begin of A::A()
+2022 5 9 16 22 19 Middle of A::A()
+2022 5 9 16 22 19 End of A::A()
+2022 5 9 16 22 19 A simple logged message in B::fooB()
+2022 5 9 16 22 19 Begin of A::fooA()
+2022 5 9 16 22 19 Middle of A::fooA()
+2022 5 9 16 22 19 Another logged message in A::fooA()
+2022 5 9 16 22 19 End of A::fooA()

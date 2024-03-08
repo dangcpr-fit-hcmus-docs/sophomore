@@ -1,0 +1,12 @@
+Rectangle: Width=7 Height=9 Perimeter=32 Area=63
+Circle: Radius=11 Perimeter=69.115 Area=380.133
+Rectangle: Width=10 Height=7 Perimeter=34 Area=70
+Triangle: a=6, b=9, c=10 Perimeter=25 Area=26.6634
+Circle: Radius=7 Perimeter=43.9823 Area=153.938
+Rectangle: Width=11 Height=10 Perimeter=42 Area=110
+Circle: Radius=7 Perimeter=43.9823 Area=153.938
+Circle: Radius=7 Perimeter=43.9823 Area=153.938
+Circle: Radius=11 Perimeter=69.115 Area=380.133
+Rectangle: Width=8 Height=9 Perimeter=34 Area=72
+Circle: Radius=11 Perimeter=69.115 Area=380.133
+Circle: Radius=7 Perimeter=43.9823 Area=153.938

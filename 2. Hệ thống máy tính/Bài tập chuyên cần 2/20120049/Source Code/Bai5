@@ -1,0 +1,62 @@
+.data
+	tb1: .asciiz "Nhap so thu nhat: "
+	tb2: .asciiz "Nhap so thu hai: "
+	tb3: .asciiz "So lon hon: "
+	s1: .word 0
+	s2: .word 0
+.text
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall
+	
+
+	#nhap so thu 1
+	li $v0,5
+	syscall
+
+	#Luu v0 vao so thu 1
+	sw $v0,s1
+	
+	lw $s1,s1 # $s1 = s1;
+
+	#xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall
+	
+
+	#nhap so thu 2
+	li $v0,5
+	syscall
+
+	#Luu v0 vao s2
+	sw $v0,s2
+	
+	lw $s2,s2 # $s2 = s2;
+
+	#Kiem tra $s2 < $s1, dung la 1, sai la 0
+	slt $t1,$s2,$s1
+	
+	#Neu s1 lon hon tuc la 1 != 0 (true)
+	bne $t1,0,S1max
+
+	#Neu s2 lon hon tuc la 0 != 0 (false)
+	li $v0,4
+	la $a0,tb3
+	syscall
+
+	li $v0,1
+	lw $a0,s2
+	syscall
+
+	b Fin
+S1max:
+	li $v0,4
+	la $a0,tb3
+	syscall
+
+	li $v0,1
+	lw $a0,s1
+	syscall
+Fin:

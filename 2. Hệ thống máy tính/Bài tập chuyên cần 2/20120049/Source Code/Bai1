@@ -1,0 +1,34 @@
+#Tinh tong tu 1 den N
+.data
+	tb1: .asciiz "Nhap chuoi: "
+	tb2: .asciiz "Chuoi da nhap: "
+	str: .space 20
+.text
+
+main:
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall    
+
+	#Nhap chuoi
+	li $v0, 8      # take in input
+	li $a1, 20      # allot the byte space for string
+	la $a0, str  # load byte space into address
+	syscall
+
+	li $v0, 4
+    	li $t0, 0
+	
+	#xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall
+
+	#Xuat chuoi da nhap
+	li $v0, 4
+    	la $a0, str
+    	syscall
+
+    	li $v0, 10
+    	syscall

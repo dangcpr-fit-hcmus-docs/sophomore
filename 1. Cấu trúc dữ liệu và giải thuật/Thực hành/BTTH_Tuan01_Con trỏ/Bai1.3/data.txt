@@ -1,0 +1,17 @@
+So bao danh, Ho va ten, Toan, Ngu Van, Vat Ly, Hoa Hoc, Sinh Hoc, Lich Su, Dia Ly, GDCD, KHTN, KHXH, Ngoai Ngu, Ghi Chu, Tinh
+BD1200001,a van nguyen,4.0,5.0,,,,4.25,7.0,7.75,,,2.0,N1,BinhDinh
+BD1200002,nhon hoai Le,7.0,6.25,6.0,6.25,6.5,,,,,,5.2,N1,BinhDinh
+BD1200003,nam hoai Pham,5.2,5.75,,,,5.75,7.25,9.25,,,4.6,N1,BinhDinh
+BD1200004,duc van Le,7.6,6.25,7.0,6.5,4.5,,,,,,6.2,N1,BinhDinh
+BD1200005,phuong Cong Nguyen,8.6,6.5,4.0,7.25,5.5,,,,,,8.4,N1,BinhDinh
+BD1200006,duc Anh Le,5.0,4.25,,,,3.25,3.75,4.75,,,3.0,N1,BinhDinh
+BD1200007,minh hoai Nguyen,7.8,5.25,5.25,6.25,6.0,,,,,,5.2,N1,BinhDinh
+BD1200008,Vinh cong Le,7.4,5.0,5.25,6.5,7.5,,,,,,5.6,N1,BinhDinh
+BD1200009,duc Anh phan,7.0,5.5,6.25,6.0,3.75,5.0,7.0,6.0,,,3.2,N1,BinhDinh
+BD1200010,Linh Thuy thi Pham,6.0,6.0,4.25,2.75,3.25,4.5,6.75,6.25,,,4.0,N1,BinhDinh
+BD1200011,Hai anh le,7.8,4.25,3.25,6.75,4.5,,,,,,7.8,N1,BinhDinh
+BD1200012,Tien thuy thi Tran,6.2,5.75,4.25,4.5,5.0,5.5,6.75,8.5,,,4.2,N1,BinhDinh
+BD1200013,minh Bao le,2.8,5.0,,,,2.75,,,,,,,BinhDinh
+BD1200014,hang phuong Thi Nguyen,4.2,4.0,3.25,2.75,2.75,4.0,5.75,7.25,,,3.2,N1,BinhDinh
+BD1200015,nhung thi pham,5.0,4.5,,,,2.75,5.0,6.5,,,4.2,N1,BinhDinh
+BD1200016,thao da thi Nguyen,7.2,4.75,7.0,7.0,4.5,,,,,,5.8,N1,BinhDinh

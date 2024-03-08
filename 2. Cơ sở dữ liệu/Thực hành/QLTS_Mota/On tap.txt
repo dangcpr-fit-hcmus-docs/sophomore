@@ -1,0 +1,39 @@
+﻿--Ôn tập
+/*
+Viết lệnh thêm 2 cột “TongDiem”(float) và cột “KetQua”(nvarchar(20)) 
+vào bảng ThiSinh thể hiện tổng điêm thi và kết quả thi của thí sinh. */
+
+
+/* Cau 1
+Cho biết tên và địa chỉ những địa điểm thi 
+có địa chỉ ở ‘TP Cần Thơ’ đã tổ chức thi tất cả 
+các môn thi của ‘Khối A’ */
+
+/* Cau 2:
+cho biết các thí sinh đạt điểm cao nhất trong mỗi môn thi của mỗi khối, 
+sắp xếp theo thứ tự mã khối, mã môn tăng dần
+(MaKhoi, MaMon, SBD, HoTen, Diem)
+*/ 
+
+/*
+Câu 3: 
+Viết stored procedure tính tổng điểm của thí sinh, nhận vào @sbd, trả ra tổng điểm các môn thi của thí sinh đó:
+- Bước 1: kiểm tra điều kiện (ĐK1)“ @MaTS có tồn tại trong bảng thí sinh không?”
+- Bước 2: tính tổng điểm của thí sinh bằng tổng xích ma (điểm từng môn thi * Tỉ lệ của từng môn trong khối thi đó)
+*/
+
+/*
+Câu 4
+Viết và cho ví dụ thực thi stored procedure sp_XetKetQuaThi, nhận tham số là số báo danh thí sinh @SBD và thực hiện qui trình xét kết quả thi như sau:
+- Bước 1: kiểm tra điều kiện: “@SBD có tồn tại trong bảng thí sinh không?”. Nếu không, print thông báo lỗi và trả về 0. 
+- Bước 2: kiểm tra điều kiện: “@SBD có tham gia dự thi ít nhất 2 buổi thi”. Nếu không thỏa thì TongDiem=null và KetQua của @ SBD là ‘Không xét”
+- Bước 3: nếu điều kiện ở bước 2 thỏa thì xét KetQua như sau:
++ Nếu tổng điểm các môn thi của thí sinh >= điểm chuẩn của ngành khối mà thí sinh dự thi: KetQua là “Vượt chuẩn”
++ Nếu tổng điểm các môn thi của thí sinh < điểm chuẩn của ngành khối mà thí sinh dự thi: KetQua là “Dưới chuẩn”
+- Bước 4: cập nhật TongDiem và KetQua của @SBD vào bảng ThiSinh. 
+*/
+
+/*
+Câu 5
+Viết và thực thi stored procedure để xét kết quả thi cho tất cả các thí sinh
+*/

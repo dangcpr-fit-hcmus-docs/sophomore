@@ -1,0 +1,52 @@
+.data
+	tb1: .asciiz "Nhap mot ky tu: "
+	tb2: .asciiz "Ky tu lien truoc: "
+	tb3: .asciiz "Ky tu lien sau: "
+	kytu: .space 4
+.text
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall
+
+	#Nhap ki tu hoa
+	li $v0, 8      # take in input
+	li $a1, 4      # allot the byte space for string
+	la $a0, kytu  # load byte space into address
+	syscall
+
+	li $v0, 4
+    	li $s0, 0
+
+	#Tim ki tu lien truoc
+	lb $t1, kytu($s0)
+    	addi $t1, $t1, -1
+    	sb $t1, kytu($s0)
+
+	#xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall
+
+	#Xuat ki tu lien truoc
+	li $v0, 4
+    	la $a0, kytu
+    	syscall
+
+	#Tim ki tu lien sau
+	lb $t1, kytu($s0)
+    	addi $t1, $t1, 2
+    	sb $t1, kytu($s0)
+
+	#xuat tb3
+	li $v0,4
+	la $a0,tb3
+	syscall
+
+	#Xuat ki tu lien sau
+	li $v0, 4
+    	la $a0, kytu
+    	syscall
+
+    	li $v0, 10
+    	syscall

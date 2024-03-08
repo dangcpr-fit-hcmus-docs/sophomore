@@ -1,0 +1,70 @@
+.data
+	tb1: .asciiz "Nhap vao mot ky tu: "
+	tb2: .asciiz "Ky tu vua nhap: "
+	so: .asciiz " la so"
+	ct: .asciiz " la chu thuong"
+	ch: .asciiz " la chu hoa"
+	kytu: .space 4
+.text
+
+main:
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall
+
+	#Nhap ki tu 
+	li $v0, 8      # take in input
+	li $a1, 4      # allot the byte space for string
+	la $a0, kytu  # load byte space into address
+	syscall
+
+	#xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall	
+
+	#Xuat ki tu vua nhap
+	li $v0, 4
+    	la $a0, kytu
+	syscall
+	
+	
+	#Load kytu vao $1
+	lb $t1, kytu($s0)
+
+	#So sanh trong doan [48,57]
+	sge $t2,$t1,48
+	sle $t3,$t1,57
+
+	beq $t2,$t3,So
+
+	#So sanh trong doan [65,90]
+	sge $t2,$t1,65
+	sle $t3,$t1,90
+
+	beq $t2,$t3,Hoa
+
+	sge $t2,$t1,97
+	sle $t3,$t1,122
+
+	beq $t2,$t3,Thuong
+So:
+	#xuat tb la so
+	li $v0,4
+	la $a0,so
+	syscall
+	b Fin
+Hoa:
+	#xuat tb la chu hoa
+	li $v0,4
+	la $a0,ch
+	syscall
+	b Fin
+Thuong:
+	#xuat tb la chu thuong
+	li $v0,4
+	la $a0,ct
+	syscall
+	b Fin	
+Fin:

@@ -1,0 +1,66 @@
+.data
+	tb1: .asciiz "Nhap chuoi: "
+	tb2: .asciiz "Chuoi dao nguoc: "
+	str: .space 30
+	dn: .space 30
+.text
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall
+
+	#Nhap chuoi
+	li $v0,8
+	la $a0,str
+	li $a1,30
+	syscall
+
+	#Khoi tao vong lap
+	li $t0,0 # bien dem vong lap
+	la $s0,str
+Loop:
+	lb $t1,($s0) # doc 1 ki tu
+	bne $t1,0,TangDem
+	j End_loop
+
+TangDem:
+	addi $t0,$t0,1 # Tang dem
+	addi $s0,$s0,1 # tang dia chi
+	j Loop
+End_loop:	
+	
+	#Chep du lieu vao chuoi dn
+
+	#Khoi tao vong lap
+	addi $s0,$s0,-1
+	la $s1,dn
+Loop2:
+	lb $t1,($s0)
+
+	#Luu ky tu vao s1
+	sb $t1,($s1)
+
+	#Giam s0
+	addi $s0,$s0,-1
+
+	#Tang s1
+	addi $s1,$s1,1
+
+	#Giam dem
+	addi $t0,$t0,-1
+
+	#t0 != 0 thi goto Loop2
+	bne $t0,0,Loop2
+	
+	#Xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall
+
+	#xuat dn
+	li $v0,4
+	la $a0,dn
+	syscall
+	
+		
+	

@@ -1,0 +1,125 @@
+.data
+	tb1: .asciiz "Nhap so thu nhat: "
+	tb2: .asciiz "Nhap so thu hai: "
+	tb3: .asciiz "Tong: "
+	tb4: .asciiz "\nHieu: "
+	tb5: .asciiz "\nTich: "
+	tb6: .asciiz "\nThuong: "
+	du:  .asciiz " du "
+	s1: .word 0
+	s2: .word 0
+	Tong: .word 0
+	Hieu: .word 0
+	Tich: .word 0
+	Thuong: .word 0
+	Du: .word 0
+.text
+	#xuat tb1
+	li $v0,4
+	la $a0,tb1
+	syscall
+	
+
+	#nhap so thu 1
+	li $v0,5
+	syscall
+
+	#Luu v0 vao so thu 1
+	sw $v0,s1
+	
+	lw $s1,s1 # $s1 = s1;
+
+	#xuat tb2
+	li $v0,4
+	la $a0,tb2
+	syscall
+	
+
+	#nhap so thu 2
+	li $v0,5
+	syscall
+
+	#Luu v0 vao s2
+	sw $v0,s2
+	
+	lw $s2,s2 # $s2 = s2;
+	
+	j InTong
+	j InHieu
+	j InTich
+	j InThuong
+
+InTong:
+	add $t0,$s1,$s2
+
+	#Luu $s0 vao s
+	sw $t0,Tong
+
+	#xuat tb Tong
+	li $v0,4
+	la $a0,tb3
+	syscall
+
+	#xuat Tong
+	li $v0,1
+	lw $a0,Tong
+	syscall
+InHieu:
+	sub $t0,$s1,$s2
+
+	#Luu $s0 vao s
+	sw $t0,Hieu
+
+	#xuat tb Hieu
+	li $v0,4
+	la $a0,tb4
+	syscall
+
+	#xuat Tong
+	li $v0,1
+	lw $a0,Hieu
+	syscall
+InTich:
+	mul $t0,$s1,$s2
+	mflo $t0
+
+	#Luu $s0 vao s
+	sw $t0,Tich
+
+	#xuat tb Tich
+	li $v0,4
+	la $a0,tb5
+	syscall
+
+	#xuat Tong
+	li $v0,1
+	lw $a0,Tich
+	syscall
+InThuong:
+	div $t0,$s1,$s2
+	
+	mflo $t0
+	sw $t0,Thuong
+
+	mfhi $t0
+	sw $t0, Du
+
+	#xuat tb Thuong
+	li $v0,4
+	la $a0,tb6
+	syscall
+
+	#xuat Thuong
+	li $v0,1
+	lw $a0,Thuong
+	syscall	
+
+	#xuat tb du
+	li $v0,4
+	la $a0,du
+	syscall
+	
+	#xuat Du
+	li $v0,1
+	lw $a0,Du
+	syscall	
